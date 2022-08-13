@@ -4,6 +4,22 @@ use tide::{Body, Request};
 pub struct EtagMiddleware {}
 
 impl Default for EtagMiddleware {
+    /// Create a default etag middleware
+    ///
+    /// # Examples
+    ///
+    /// ```no_run
+    ///
+    /// let mut app = tide::new();
+    /// app.with(tide_etag::EtagMiddleware::default());
+    ///
+    /// app.at("/").get(|_| async {
+    ///     let mut resp = tide::Response::new(200);
+    ///     resp.set_body(tide::Body::from_string("HELLO".to_string()));
+    ///     Ok(resp)
+    /// });
+    /// app.listen("127.0.0.1:8080").await?;
+    /// ```
     fn default() -> Self {
         Self {}
     }
