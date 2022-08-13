@@ -1,0 +1,16 @@
+[package]
+name = "tide-etag"
+version = "0.1.0"
+edition = "2021"
+description = "Tide middleware to generate http ETag header and respond to if-none-match header"
+keywords = ["tide", "etag"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tide = { version = "0.16.0", default-features = false }
+lz_fnv = "0.1.2"
+base64 = "0.13.0"
+
+[dev-dependencies]
+async-std = { version = "1.11", features = ["attributes"] }
