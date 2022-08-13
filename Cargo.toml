@@ -4,6 +4,11 @@ version = "0.1.0"
 edition = "2021"
 description = "Tide middleware to generate http ETag header and respond to if-none-match header"
 keywords = ["tide", "etag"]
+license = "MIT"
+license-file = "LICENSE"
+repository = "https://github.com/rrmdn/tide-etag/"
+homepage = "https://github.com/rrmdn/tide-etag/"
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
